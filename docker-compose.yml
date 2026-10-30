@@ -1,0 +1,8 @@
+services:
+  incident-manager:
+    build: .
+    container_name: incident-manager
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./incidents.db:/app/incidents.db 
